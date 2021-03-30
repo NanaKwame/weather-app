@@ -114,17 +114,17 @@ function getTempColor (val) {
   let tempColor;
   if (val < 55) {
     let value = map(val, -20, 55, 0, 1);
-    tempColor = lerpColor(color("#0000ff"), color("#ea89f5"), value);
+    tempColor = lerpColor(color("#8787f5"), color("#ea89f5"), value);
   } else {
     let value = map(val, 55, 110, 0, 1);
-    tempColor = lerpColor(color("#ea89f5"), color("#ff0000"), value);
+    tempColor = lerpColor(color("#ea89f5"), color("#f58989"), value);
   }
   return tempColor;
 }
 
 function getPrecipColor (val) {
   let value = map(val, 0, 1, 0, 1);
-  let precipColor = lerpColor(color("#d7e9f9"), color("#343f49"), value);
+  let precipColor = lerpColor(color("#a5d2fa"), color("#7694b0"), value);
   return precipColor;
 }
 
